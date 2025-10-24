@@ -1,16 +1,64 @@
-# React + Vite
+# NekZoho Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern website for NekZoho, a Zoho Consulting and Digital Solutions provider, built with React, Vite, and Bootstrap. This project features a clean design, smooth scroll animations, and a multi-page structure.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design:** Clean, professional interface using Bootstrap 5.
+- **Component-Based:** Built with React and organized into reusable components (`src/components`) and pages (`src/pages`).
+- **Routing:** Multi-page navigation handled by `react-router-dom`.
+- **Smooth Scrolling:** Implements `react-scroll` for navigation within the homepage.
+- **Animations:** Subtle fade-in animations on scroll using `react-intersection-observer`.
+- **Responsive:** Designed to work across various screen sizes.
+- **Fast Development:** Built with Vite for a quick development experience.
 
-## React Compiler
+## 📸 Screenshot
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View Homepage Screenshot](https://raw.githubusercontent.com/Shreyansh157/NekZoho/refs/heads/main/public/homepage_screenshot.png)
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 19
+- **Build Tool:** Vite
+- **Styling:** Bootstrap 5 & Custom CSS
+- **Routing:** React Router DOM
+- **Scrolling:** React Scroll
+- **Animations:** React Intersection Observer
+- **Icons:** Lucide React
+
+## 🛠️ Setup and Running
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone <your-repo-url>
+    cd nekzoho
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    This command starts the Vite development server. Open your browser to the local URL provided (usually `http://localhost:5173`).
+
+4.  **Build for production:**
+
+    ```bash
+    npm run build
+    ```
+
+    This command builds the optimized static assets into the `dist` folder.
+
+5.  **Preview the production build:**
+    ```bash
+    npm run preview
+    ```
+    This command serves the production build locally for testing.
