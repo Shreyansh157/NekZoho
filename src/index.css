@@ -1,0 +1,66 @@
+/* src/index.css */
+
+/* 1. Define the new professional color palette (Vibrant Blue & Dark Slate) */
+:root {
+  --bs-primary: #0d6efd; /* Vibrant, standard Bootstrap Blue */
+  --bs-primary-rgb: 13, 110, 253;
+
+  --bs-secondary: #00c49a; /* Vibrant Teal (for secondary accents) */
+  --bs-secondary-rgb: 0, 196, 154;
+
+  --bs-dark: #212529; /* Standard dark for text */
+  --bs-dark-rgb: 33, 37, 41;
+
+  --bs-body-color: #495057; /* Readable body gray */
+  --bs-heading-color: var(--bs-dark);
+
+  --bs-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bs-body-font-size: 1.05rem;
+  --bs-body-line-height: 1.6;
+}
+
+/* 2. Custom Tweaks & Components */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--bs-heading-color);
+}
+
+/* Add generous padding to all sections */
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Update card styling for the new primary color */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--bs-primary);
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Update icon shape for the new primary color */
+.icon-shape {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+}
+
+/* Update testimonial card for the new primary color */
+.testimonial-card {
+  border: 0;
+  border-left: 4px solid var(--bs-primary);
+}
