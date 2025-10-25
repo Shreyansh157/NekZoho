@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom"; // Import Link
 
 const CtaSection = () => {
   return (
-    <section id="contact" className="section-padding bg-dark text-white text-center">
+    <section id="contact" className="section-padding bg-dark text-white text-center pb-1">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">
@@ -21,6 +21,7 @@ const CtaSection = () => {
             {/* --- End Change --- */}
           </div>
         </div>
+        <hr className="border-white-50 mt-5" />
       </div>
     </section>
   );

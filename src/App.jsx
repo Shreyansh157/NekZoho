@@ -10,15 +10,21 @@ import ScrollToTop from "./components/ScrollToTop"; // Import the new component
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import BlogsPage from "./pages/BlogsPage";
 
 export default function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* Add ScrollToTop component here */}
+      <ScrollToTop />
       <Header />
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/blogs" element={<BlogsPage />} />
           <Route path="/blog/:blogId" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<HomePage />} />

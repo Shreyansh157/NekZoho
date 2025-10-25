@@ -31,7 +31,7 @@ const AboutSection = () => {
                 Dedicated support and long-term partnership.
               </li>
             </ul>
-            <a href="#" className="btn btn-primary btn-lg rounded-pill px-5 py-3 mt-3">
+            <a href="#team-section" className="btn btn-primary btn-lg rounded-pill px-5 py-3 mt-3">
               Meet Our Team
             </a>
           </div>

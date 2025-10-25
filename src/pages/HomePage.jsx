@@ -42,7 +42,6 @@ const HomePage = () => {
       </FadeInSection>
 
       <FadeInSection>
-        {/* Pass blogPosts data down if needed, or manage state globally */}
         <BlogSection />
       </FadeInSection>
 

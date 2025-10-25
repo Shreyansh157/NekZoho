@@ -3,10 +3,10 @@ import { Globe, MessageSquare, Calendar, Mail, Phone, MapPin } from "lucide-reac
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white pt-1 pb-5">
+    <footer className="bg-dark text-white pt-3 pb-5">
       <div className="container">
-        <hr className="border-white-50" />
-        <div className="row g-4 pt-5 pb-4">
+        {/* <hr className="border-white-50" /> */}
+        <div className="row g-4 pt-2 pb-3">
           {/* Brand Info */}
           <div className="col-lg-4 col-md-12">
             <Link className="navbar-brand fw-bold fs-2 text-white text-decoration-none" to="/">
@@ -102,7 +102,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <hr className="border-white-50" />
-        <div className="text-center text-white-50 pt-3">
+        <div className="text-center text-white-50 pt-4">
           <small>&copy; {new Date().getFullYear()} NekZoho. All Rights Reserved.</small>
         </div>
       </div>
