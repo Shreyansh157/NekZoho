@@ -2,7 +2,7 @@ import heroImage from "../assets/hero-dashboard.png"; // Adjusted path
 
 const HeroSection = () => {
   return (
-    <section id="home" className="bg-light py-5">
+    <section id="home" className="bg-light py-5 pt-0">
       <div className="container py-5">
         <div className="row align-items-center g-5 py-5">
           {/* Left Column (Text) */}

@@ -1,19 +1,20 @@
 // src/components/Header.jsx
 import { Menu } from "lucide-react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+// ScrollLink is no longer needed if only Get Started used it for scrolling
+// import { Link as ScrollLink } from "react-scroll";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === "/"; // Check if we are on the home page
+  const isHomePage = location.pathname === "/"; // Still needed for potential future logic
 
-  // Define nav items with their target (ID for scroll or path for route)
   const navItems = [
-    { name: "Home", target: "home", isScroll: true, isPage: false }, // Scroll target ID
-    { name: "About", target: "/about", isScroll: false, isPage: true },
-    { name: "Services", target: "/services", isScroll: false, isPage: true }, // Scroll target ID
-    { name: "Blog", target: "/blogs", isScroll: false, isPage: true }, // Scroll target ID
-    { name: "Contact", target: "/contact", isScroll: false, isPage: true }, // Route path
+    { name: "Home", target: "/", isPage: true },
+    { name: "About", target: "/about", isPage: true },
+    { name: "Services", target: "/services", isPage: true },
+    { name: "Blogs", target: "/blogs", isPage: true },
+    { name: "Contact", target: "/contact", isPage: true },
   ];
 
   return (
@@ -44,29 +45,14 @@ const Header = () => {
             ))}
           </ul>
 
-          {/* --- Conditionally Render "Get Started" Button --- */}
-          {isHomePage ? (
-            // If on Home page, use ScrollLink to scroll to the contact section
-            <ScrollLink
-              to="contact" // ID of the CtaSection
-              smooth={true}
-              duration={100} // Faster scroll
-              offset={-70}
-              className="btn btn-primary ms-lg-3 rounded-pill fw-bold px-4" // Added fw-bold
-              style={{ cursor: "pointer" }}
-            >
-              Get Started
-            </ScrollLink>
-          ) : (
-            // If on another page, use RouterLink to go to Home page's contact section
-            <RouterLink
-              to="/#contact" // Go to homepage and then scroll (browser default behavior)
-              className="btn btn-primary ms-lg-3 rounded-pill fw-bold px-4" // Added fw-bold
-            >
-              Get Started
-            </RouterLink>
-          )}
-          {/* --- End Conditional Render --- */}
+          {/* --- "Get Started" Button Block Removed --- */}
+
+          {/* Theme Toggle - Now might be the last element */}
+          <div className="d-flex align-items-center ms-lg-auto">
+            {" "}
+            {/* Use ms-lg-auto to push toggle right */}
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </nav>

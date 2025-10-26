@@ -42,7 +42,7 @@ const AboutSection = () => {
                 className="bg-primary text-white p-4 rounded-3 shadow-lg position-absolute d-none d-lg-block"
                 style={{ bottom: "-2rem", right: "-2rem" }}
               >
-                <h3 className="fw-bold mb-0 text-light">10+</h3>
+                <h3 className="fw-bold mb-0 text-white">10+</h3>
                 <p className="mb-0 fs-5">Years Experience</p>
               </div>
             </div>

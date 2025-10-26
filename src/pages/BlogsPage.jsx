@@ -14,7 +14,7 @@ const PageHeader = ({ title, breadcrumb }) => (
   <section className="bg-primary text-white py-5">
     <div className="container text-center">
       <h1 className="display-4 fw-bold text-white">{title}</h1>
-      {breadcrumb && <p className="lead text-white-75">{breadcrumb}</p>}
+      {breadcrumb && <p className="lead text-white">{breadcrumb}</p>}
     </div>
   </section>
 );
@@ -25,7 +25,7 @@ const BlogsPage = () => {
       <PageHeader title="Our Blog" breadcrumb="Home / Blog" />
 
       <FadeInSection>
-        <section className="section-padding bg-light-textured-1">
+        <section className="section-padding bg-light">
           <div className="container">
             <SectionTitle title="All Our Latest Articles" description="Dive into our expert insights, industry news, and guides." />
             <div className="row g-4">

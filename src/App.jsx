@@ -14,6 +14,17 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import BlogsPage from "./pages/BlogsPage";
 
+// --- Apply theme immediately ---
+// This IIFE (Immediately Invoked Function Expression) runs before React mounts
+(() => {
+  const storedTheme = localStorage.getItem("theme");
+  // Add system preference check if desired:
+  // const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const themeToApply = storedTheme || "light"; // Default to light
+  document.documentElement.setAttribute("data-bs-theme", themeToApply);
+})();
+// --- End theme application ---
+
 export default function App() {
   return (
     <Router>

@@ -10,7 +10,7 @@ const PageHeader = ({ title, breadcrumb }) => (
   <section className="bg-primary text-white py-5">
     <div className="container text-center">
       <h1 className="display-4 fw-bold text-white">{title}</h1>
-      {breadcrumb && <p className="lead text-white-75">{breadcrumb}</p>}
+      {breadcrumb && <p className="lead text-white">{breadcrumb}</p>}
     </div>
   </section>
 );
