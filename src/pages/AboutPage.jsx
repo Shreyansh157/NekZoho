@@ -34,9 +34,9 @@ const AboutPage = () => {
       {/* --- END CORE VALUES SECTION --- */}
 
       {/* --- ADD TEAM SECTION --- */}
-      <FadeInSection>
+      {/* <FadeInSection>
         <TeamSection />
-      </FadeInSection>
+      </FadeInSection> */}
       {/* --- END TEAM SECTION --- */}
 
       {/* Reuse the Why Choose Us Section component */}

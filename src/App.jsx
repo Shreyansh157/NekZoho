@@ -20,7 +20,8 @@ import BlogsPage from "./pages/BlogsPage";
   const storedTheme = localStorage.getItem("theme");
   // Add system preference check if desired:
   // const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const themeToApply = storedTheme || "light"; // Default to light
+  // const themeToApply = storedTheme || "light";
+  const themeToApply = "light"; // Default to light
   document.documentElement.setAttribute("data-bs-theme", themeToApply);
 })();
 // --- End theme application ---
